@@ -1,0 +1,7 @@
+.card_heroes {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0;
+}

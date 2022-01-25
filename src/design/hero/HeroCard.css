@@ -1,0 +1,39 @@
+.card {
+    background-color: #414141;
+    border: 2px solid #c0c0c0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 1em;
+    padding: 0;
+}
+.card h3 {
+    text-align: center;
+}
+.card_img img {
+    max-height: 50vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card_text {
+    display: flex;
+}
+.card_text p {
+    text-align: center;
+    color: #fff;
+}
+.link {
+    color: rgb(93, 104, 248);
+    text-decoration: none;
+}
+.marvel {
+    color: #ff3737;
+}
+.dc {
+    color: #5f5fff;
+}
