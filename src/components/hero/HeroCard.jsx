@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 import './../../design/hero/HeroCard.css'
 
@@ -33,5 +34,12 @@ const HeroCard = ({
         </div>
     )
 };
+
+HeroCard.propTypes = {
+    id: PropTypes.string.isRequired,
+    superhero: PropTypes.string.isRequired,
+    alter_ego: PropTypes.string.isRequired,
+    publisher: PropTypes.string.isRequired
+}
 
 export default HeroCard;

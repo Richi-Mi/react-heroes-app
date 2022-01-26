@@ -1,14 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
+import AuthContext from '../../auth/authContext';
+import types from '../../types/types';
 
 import './../../design/UI/nav.css';
 
 // https://reactrouter.com/docs/en/v6
 
 const Navbar = () => {
+    const { user, dispatch } = useContext( AuthContext );
     const navigate = useNavigate();
 
     const handleLogOut = () => {
+        const actionLogOut = {
+            type: types.logout
+        }
+        dispatch( actionLogOut )
         navigate('/login', {
             replace: true // Argumento Replace
         })
@@ -49,7 +56,7 @@ const Navbar = () => {
             </div>
             <div className='nav_acount'>
                 <span className='text_info acount_item'>
-                    Ricardo
+                    { user.name }
                 </span>
                 <button
                     onClick={ handleLogOut }

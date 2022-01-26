@@ -7,11 +7,5 @@
     margin-bottom: .5em;
 }
 .btn_login {
-    background-color: #00f;
-    color: #fff;
-    border: none;
-    outline: none;
-    margin-top: .5em;
-    padding: .5em 1em;
-    border-radius: 5px;
+    margin-left: 1em;
 }
