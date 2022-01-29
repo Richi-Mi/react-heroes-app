@@ -1,8 +1,10 @@
 import React, { useMemo } from 'react';
 import { useParams, Navigate, useNavigate } from 'react-router-dom';
+import heroImg from '../../helpers/heroImage';
 import getHeroById from '../../selectors/getHeroById';
 
 import './../../design/hero/HeroScreen.css';
+// import batman from '../../assets/dc-batman.jpg' .- estatica
 
 const Hero = () => {
     const { heroeID } = useParams();
@@ -25,7 +27,9 @@ const Hero = () => {
         characters 
     } = heroe
     
-    const imagePath = `/assets/${id}.jpg`;
+    // const imagePath = `/assets/${id}.jpg`; .- Desde public/assets
+    // const imagePath = `${ batman }` .- Import estatico
+    const imagePath = heroImg(`./${id}.jpg`)
 
     const handleReturn = () => {
         // if( publisher === 'DC Comics' ) {
@@ -41,7 +45,11 @@ const Hero = () => {
         <div className='container'>
             <div className='hero_content'>
                 <div className="hero_image">
-                    <img src={ imagePath } alt={ superhero } className='animate__animated animate__fadeInLeft'/>
+                    <img 
+                        src={ imagePath } 
+                        alt={ superhero } 
+                        className='animate__animated animate__fadeInLeft'
+                    />
                 </div>
                 <div className="hero_info animate__animated animate__fadeIn">
                     <h3 className='hero_title'> { superhero } </h3>

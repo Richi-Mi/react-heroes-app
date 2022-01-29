@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-import './../../design/hero/HeroCard.css'
+import './../../design/hero/HeroCard.css';
+import heroImg from '../../helpers/heroImage';
 
 const HeroCard = ({
     id,
@@ -10,7 +11,7 @@ const HeroCard = ({
     alter_ego,
     publisher
 }) => {
-    const imgPath = `/assets/${id}.jpg`;
+    const imgPath = heroImg(`./${id}.jpg`);
     
     return (
         <div className='card animate__animated animate__fadeIn'>

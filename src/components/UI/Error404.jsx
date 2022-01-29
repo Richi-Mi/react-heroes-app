@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './../../design/UI/Error404.css';
+import gifSad from '../../assets/img_triste.gif';
 
 const Error404 = () => {
     return (
@@ -10,7 +11,7 @@ const Error404 = () => {
                 <p> Asegurate que el URL Ingresado <b> ({ window.location.href }) </b> sea Correcto </p>
             </div>
             <div className="img">
-                <img src='/assets/img_triste.gif' alt='triste' />
+                <img src={ gifSad } alt='triste' />
             </div>
         </div>
     )
