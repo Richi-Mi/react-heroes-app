@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` * Pruebas en el componente <Navbar />  - Debe de mostrar el componente correctamente 1`] = `
+<nav
+  className="nav"
+>
+  <div
+    className="nav_options"
+  >
+    <a
+      aria-current="page"
+      className="nav_link active"
+      href="/"
+      onClick={[Function]}
+    >
+      <i
+        className="fas fa-home"
+      />
+      Inicio
+    </a>
+    <a
+      className="nav_link"
+      href="/marvel"
+      onClick={[Function]}
+    >
+      Marvel
+    </a>
+    <a
+      className="nav_link"
+      href="/dc"
+      onClick={[Function]}
+    >
+      DC
+    </a>
+    <a
+      className="nav_link"
+      href="/search"
+      onClick={[Function]}
+    >
+      Search
+      <i
+        className="fas fa-search"
+      />
+    </a>
+  </div>
+  <div
+    className="nav_acount"
+  >
+    <span
+      className="text_info acount_item"
+    >
+      Pedro
+    </span>
+    <button
+      className="btn_logout acount_item"
+      onClick={[Function]}
+    >
+      Logout
+    </button>
+  </div>
+</nav>
+`;

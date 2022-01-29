@@ -16,7 +16,7 @@ const LoginScreen = () => {
     const { username } = values 
 
     const handleLogin = () => {
-        const lastPath = localStorage.getItem('lastPath') || '/'
+        const lastPath = localStorage.getItem('lastPath') || '/';
         const action = {
             type: types.login,
             payload: {

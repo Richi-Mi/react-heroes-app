@@ -63,7 +63,7 @@ const SearchScreen = () => {
                     {
                         ( search === '' ) 
                             ? <p className='alert_info'> Busca un Heroe </p>
-                            : ( heroesFiltered.length === 0 ) && <p className='alert_danger'> No hay resultados </p>
+                            : ( heroesFiltered.length === 0 ) && <p className='alert_danger'> No hay resultados para: { search } </p>
                     }
                 </div>
                 <div className="cards_results">
