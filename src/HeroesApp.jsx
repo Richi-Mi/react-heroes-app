@@ -6,7 +6,7 @@ import AppRouter from './routers/AppRouter';
 const init = () => {
   return JSON.parse(localStorage.getItem('user')) || { logged: false };
 }
-
+  
 const HeroesApp = () => {
   const [ user, dispatch ] = useReducer( authReducer, {}, init );
 
